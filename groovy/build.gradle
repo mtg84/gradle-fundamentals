@@ -1,3 +1,10 @@
+plugins {
+    id 'java'
+    id("org.flywaydb.flyway") version "6.3.2"    
+}
+
+version = '1.0-SNAPSHOT'
+
 task 'hello' {
     doLast{
         println "Hello Gradle"
@@ -12,4 +19,5 @@ task world {
     }
 }
 
-apply plugin: 'java'
+/*otra forma de sintaxis */
+//apply plugin: 'java'
