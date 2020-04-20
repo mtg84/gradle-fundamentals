@@ -1,10 +1,10 @@
-task.register("helllo") {
+tasks.register("helllo") {
     doLast {
         print("Hello")
     }
 }
 
-task.register("world") {
+tasks.register("world") {
 
     dependsOn("hello")
 
