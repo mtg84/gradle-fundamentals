@@ -5,6 +5,20 @@ plugins {
 
 version = '1.0-SNAPSHOT'
 
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+    test {
+        srcDir 'test/src'
+    }
+}
+
+// for plugin application
+//mainClassName = 'com.pluralsight.security.Hash'
+
 task 'hello' {
     doLast{
         println "Hello Gradle"
