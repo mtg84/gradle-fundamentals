@@ -4,4 +4,12 @@ task 'hello' {
     }
 }
 
+task world {
+    dependsOn hello
+
+    doLast {
+        println(" World")
+    }
+}
+
 apply plugin: 'java'
